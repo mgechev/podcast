@@ -1,16 +1,29 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute, Router, ROUTES} from '@angular/router';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css'],
+  template: `
+    <h1>Overview of blog posts</h1>
+
+    <a *ngFor="let blog of blogs$|async" [routerLink]='[blog.route]'>
+      <article>
+        <h3>{{blog.title || blog.route}}</h3>
+        <h4> {{ blog.published | date:"shortDate" }}</h4>
+        <p>{{blog.description}}</p>
+      </article>
+    </a>
+  `,
   preserveWhitespaces: true,
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class BlogComponent implements OnInit {
-  ngOnInit() {}
+  blogs$ = this.srs.available$.pipe(
+    map(routeList => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`)))
+  );
 
-  constructor(private router: Router, private route: ActivatedRoute) {
-  }
+  constructor(private srs: ScullyRoutesService) {}
+
+  ngOnInit() {}
 }
