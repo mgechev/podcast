@@ -1,5 +1,5 @@
 exports.config = {
-  projectRoot: "./src/app",
+  projectRoot: "./",
   routes: {
     '/blog/:slug': {
       type: 'contentFolder',
