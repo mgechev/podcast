@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  height: 30vh;
+  background-color: #333333;
+}
+
+section {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section,
+summary {
+  width: 50%;
+  min-width: 400px;
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+}
+
+summary {
+  color: #999;
+  font-size: 1.1em;
+}
+
+h1 {
+  display: inline-block;
+  border-left: 2px solid #1ba8c4;
+  padding-left: 7px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 4em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  font-size: 0.5em;
+  font-weight: 200;
+}

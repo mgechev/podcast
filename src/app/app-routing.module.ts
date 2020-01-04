@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'blog'
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
-    path: '',
-    component: AppComponent,
-    children: [
-      {
-        path: 'blog',
-        loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
-      }
-    ]
+    path: 'episode',
+    loadChildren: () => import('./episode/episode.module').then(m => m.EpisodeModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   }
 ];
 
