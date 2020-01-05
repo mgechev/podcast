@@ -63,7 +63,20 @@ header a:hover {
   font-size: 1.3em;
 }
 
-.title span {
+.title .host {
   font-style: italic;
   font-weight: 100;
+}
+
+.terminal {
+  font-weight: 900;
+  font-style: normal;
+  font-family: monospace;
+  background-color: black;
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 4px;
+  border: 2px solid #777;
 }
