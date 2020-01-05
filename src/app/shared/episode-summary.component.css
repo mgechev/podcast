@@ -9,6 +9,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
 }
 
 section,
@@ -25,6 +26,10 @@ summary {
   font-size: 1.1em;
 }
 
+summary a {
+  color: #fff;
+}
+
 h1 {
   display: inline-block;
   border-left: 2px solid #1ba8c4;
@@ -39,4 +44,10 @@ h1 {
 h1 span {
   font-size: 0.5em;
   font-weight: 200;
+}
+
+app-player {
+  position: absolute;
+  top: 85px;
+  right: 50px;
 }

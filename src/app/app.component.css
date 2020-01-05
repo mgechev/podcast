@@ -44,6 +44,11 @@ header a:hover {
 .social {
   margin-right: 20px;
   color: #eee;
+  font-size: 1.4em;
+}
+
+.social li {
+  margin-left: 20px;
 }
 
 .menu-wrapper {
