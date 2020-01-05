@@ -28,10 +28,12 @@ export class PlayerComponent implements AfterViewInit {
   ngAfterViewInit() {
     const progress = this.progress.nativeElement;
     const totalLength = progress.getTotalLength();
-    const audio = this.audio.nativeElement;
+    const audio = this.audio.nativeElement as HTMLAudioElement;
     progress.setAttribute('stroke-dasharray', totalLength);
     progress.setAttribute('stroke-dashoffset', totalLength);
-    this.audio.nativeElement.addEventListener('timeupdate', () => {
+    audio.addEventListener('pause', () => this.playing = false);
+    audio.addEventListener('play', () => this.playing = true);
+    audio.addEventListener('timeupdate', () => {
       const currentTime = audio.currentTime;
       const maxduration = audio.duration;
       const calc = totalLength - (currentTime / maxduration) * totalLength;

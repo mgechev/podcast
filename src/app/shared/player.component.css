@@ -13,6 +13,10 @@ svg path {
   cursor: pointer;
 }
 
+button {
+  position: relative;
+}
+
 .play {
   position: absolute;
   top: 50%;
@@ -25,34 +29,70 @@ svg path {
   border: none;
 }
 
-.play .arrow {
+.arrow {
+  transition: all 0.3s;
+
   width: 0;
   height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 25px solid #eee;
+  border-top-width: 15px;
+  border-bottom-width: 15px;
+  border-left-width: 25px;
+
+  border-top-color: transparent;
+  border-top-style: solid;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-left-color: #eee;
+
   margin: auto;
   margin-left: 22px;
 }
 
-.play .pause {
+.play,
+.pause {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
-.play .pause::before {
+.pause {
+  transition: opacity 0.3s;
+}
+
+/* Center */
+.play,
+.pause,
+.pause::after,
+.pause::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pause::after,
+.pause::before {
   width: 12px;
   height: 35px;
   content: '';
   background-color: #eee;
   display: inline-block;
-  margin-right: 12px;
+  opacity: 1;
 }
 
-.play .pause::after {
-  width: 12px;
-  height: 35px;
-  content: '';
-  background-color: #eee;
-  display: inline-block;
+.pause::before {
+  left: calc(50% - 10px);
+}
+
+.pause::after {
+  left: calc(50% + 10px);
+}
+
+.hidden-arrow {
+  border-left-width: 0;
+}
+
+.hidden {
+  opacity: 0;
 }
