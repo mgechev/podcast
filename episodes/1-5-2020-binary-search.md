@@ -5,6 +5,7 @@ audio: https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/f
 publish: true
 ---
 
-# Binary Search
+In this episode we covered how binary search works and when we should consider it in practice. You can find links for further reading below:
 
-More content
+- [Implementation](https://github.com/mgechev/javascript-algorithms/blob/master/src/searching/binarysearch.js) in JavaScript
+- Binary search on [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)

@@ -5,6 +5,8 @@ audio: https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/f
 publish: true
 ---
 
-# How Compilers Work
+In this episode we looked at the three main phases each compiler implements - lexical analysis, syntax analysis, and code generation. For further reading you can follow the links:
 
-More content
+- [Implementing a Simple Compiler on 25 Lines of JavaScript](https://blog.mgechev.com/2017/09/16/developing-simple-interpreter-transpiler-compiler-tutorial/)
+- [Simple interpreter](https://github.com/mgechev/playground/tree/master/js/lilly-interpreter) implemented in JavaScript
+- The [ELang](https://github.com/mgechev/elang) programming language implemented in Java
