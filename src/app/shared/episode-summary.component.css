@@ -10,7 +10,7 @@ section {
   text-align: left;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -19,13 +19,13 @@ summary {
   width: 50%;
   min-width: 300px;
   max-width: 1200px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   height: 150px;
 }
 
 summary {
+  display: block;
   color: #999;
   font-size: 1.1em;
   margin-top: 25px;
@@ -42,7 +42,7 @@ h1 {
   padding-left: 7px;
   color: #fff;
   font-weight: 400;
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -53,7 +53,9 @@ h1 span {
 }
 
 app-player {
-  position: absolute;
-  top: 85px;
-  right: 50px;
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-top: 35px;
+  position: relative;
 }
