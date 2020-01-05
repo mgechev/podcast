@@ -10,17 +10,21 @@ import { Component } from '@angular/core';
       <p>
         The Programming Podcast with Minko Gechev is a weekly show that aims to
         make us better software engineers! With each new episode, you'll get
-        exposed to a new idea in a brief and accessible way. This way:
+        exposed to a new idea in a brief and accessible way. Listening to the
+        show:
       </p>
 
       <div class="list">
         <ul>
           <li>
-            You can directly apply it in practice for more efficient and elegant
-            solutions
+            Will help you understand where you can apply the individual concepts
+            for more elegant and efficient solutions.
           </li>
           <li>
-            Help you land your next engineering job by expanding your knowledge
+            Give you an intuition how complex algorithms and patterns work.
+          </li>
+          <li>
+            Help you land your next engineering job by expanding your knowledge.
           </li>
           <li>
             Spark your interest for further reading so you can dig deeper and
@@ -28,6 +32,12 @@ import { Component } from '@angular/core';
           </li>
         </ul>
       </div>
+
+      <p>
+        Having a computer science degree is not a requirement for getting value
+        from "The Programming Podcast." If you have one, you'll finally
+        understand how you can use all the math you've studied.
+      </p>
 
       <h3>About the host</h3>
 
