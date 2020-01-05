@@ -11,23 +11,7 @@ export interface Episode {
 
 @Component({
   selector: 'app-episode-summary',
-  template: `
-    <section *ngIf="episode">
-      <h1>
-        <span>Episode #{{ episode.number }}</span
-        ><br />{{ episode.title }}
-      </h1>
-      <app-player
-        *ngIf="showPlayer"
-        [source]="episode.audio"
-        width="120"
-      ></app-player>
-    </section>
-    <summary *ngIf="episode">
-      {{ episode.description }}
-      <a *ngIf="preview" [routerLink]="episode.route">Read more</a>
-    </summary>
-  `,
+  templateUrl: './episode-summary.component.html',
   styleUrls: ['./episode-summary.component.css']
 })
 export class EpisodeSummaryComponent {

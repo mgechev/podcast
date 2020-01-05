@@ -1,0 +1,12 @@
+<div *ngIf="currentEpisode">
+  <app-episode-summary [episode]="currentEpisode" [showPlayer]="false"
+    ><app-episode-summary> </app-episode-summary
+  ></app-episode-summary>
+  <section class="episode-content">
+    <audio [src]="currentEpisode.audio" controls></audio>
+    <scully-content></scully-content>
+  </section>
+</div>
+<div class="loading" *ngIf="!currentEpisode">
+  Loading...
+</div>

@@ -1,0 +1,18 @@
+.loading {
+  text-align: center;
+}
+
+.episode-content {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  width: 60%;
+  max-width: 1200px;
+  min-width: 400px;
+  margin: auto;
+}
+
+audio {
+  width: 100%;
+}

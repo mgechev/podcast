@@ -6,42 +6,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-episode',
-  template: `
-    <div *ngIf="currentEpisode">
-      <app-episode-summary [episode]="currentEpisode" [showPlayer]="false"
-        ><app-episode-summary> </app-episode-summary
-      ></app-episode-summary>
-      <section>
-        <audio [src]="currentEpisode.audio" controls></audio>
-        <scully-content></scully-content>
-      </section>
-    </div>
-    <div class="loading" *ngIf="!currentEpisode">
-      Loading...
-    </div>
-  `,
-  styles: [
-    `
-      .loading {
-        text-align: center;
-      }
-
-      section {
-        margin-top: 10px;
-        padding: 20px;
-        border-radius: 5px;
-        font-size: 1.2em;
-        width: 60%;
-        max-width: 1200px;
-        min-width: 400px;
-        margin: auto;
-      }
-
-      audio {
-        width: 100%;
-      }
-    `
-  ],
+  templateUrl: './episode.component.html',
+  styleUrls: ['./episode.component.css'],
   preserveWhitespaces: true,
   encapsulation: ViewEncapsulation.Emulated
 })

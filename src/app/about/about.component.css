@@ -1,0 +1,64 @@
+p,
+h3,
+div.list {
+  font-size: 1.2em;
+  width: 60%;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 400px;
+}
+
+p,
+h3 {
+  padding-bottom: 1px;
+  margin-top: 20px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+article {
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  position: relative;
+  height: 210px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article.podcast::after {
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+
+article.podcast::after {
+  background-image: url(/assets/podcast.jpg);
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.host-photo {
+  width: 150px;
+  float: left;
+  margin-right: 20px;
+}
