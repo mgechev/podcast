@@ -1,7 +1,8 @@
 <section *ngIf="episode">
   <h1>
     <span>Episode #{{ episode.number }}</span
-    ><br />{{ episode.title }}
+    >
+    {{ episode.title }}
   </h1>
   <app-player
     *ngIf="showPlayer"
