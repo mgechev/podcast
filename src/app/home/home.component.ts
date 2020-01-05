@@ -13,6 +13,7 @@ import { map } from 'rxjs/operators';
       <h2>{{ episode.title || episode.route }}</h2>
       <h4>{{ episode.published | date: 'shortDate' }}</h4>
       <p>{{ episode.description }}</p>
+      <p><a [routerLink]="episode.route">Read more</a></p>
     </article>
   `,
   styles: [`
@@ -36,6 +37,14 @@ import { map } from 'rxjs/operators';
     max-width: 1200px;
     min-width: 400px;
     margin: auto;
+  }
+
+  a {
+    color: #222;
+  }
+
+  a:hover {
+    color: #000;
   }
   `],
   preserveWhitespaces: true,

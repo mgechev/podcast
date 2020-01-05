@@ -6,6 +6,7 @@ export interface Episode {
   description: string;
   route: string;
   number: number;
+  audio: string;
 }
 
 @Component({
@@ -18,7 +19,7 @@ export interface Episode {
       </h1>
       <app-player
         *ngIf="showPlayer"
-        source="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/f0/b8/fa/f0b8fa78-b63b-34df-c4f2-4156a3a83b38/mzaf_6470951130098414732.plus.aac.ep.m4a"
+        [source]="episode.audio"
         width="120"
       ></app-player>
     </section>
