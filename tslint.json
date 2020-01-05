@@ -3,6 +3,7 @@
   "rules": {
     "array-type": false,
     "arrow-parens": false,
+    "variable-name": [true, "camelCase", "allow-leading-underscore"],
     "deprecation": {
       "severity": "warning"
     },
