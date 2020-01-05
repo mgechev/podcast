@@ -45,6 +45,9 @@ h1 {
   font-size: 3.5em;
   text-align: left;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 span {

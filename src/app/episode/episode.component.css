@@ -6,7 +6,7 @@
   margin-top: 10px;
   padding: 20px;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   width: 60%;
   max-width: 1200px;
   min-width: 300px;
@@ -15,4 +15,5 @@
 
 audio {
   width: 100%;
+  margin-bottom: 20px;
 }
