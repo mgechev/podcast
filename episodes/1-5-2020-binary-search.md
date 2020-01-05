@@ -1,7 +1,7 @@
 ---
 title: Binary Search
 description: Today we'll discuss the binary search algorithm. We'll go through several examples when the algorithm makes sense and discuss in detail how it works. By the end of the episode, you'll know when to apply a binary search and know why it's more efficient than a linear search.
-audio: /assets/tracks/episode-2.mp3
+audio: https://feeds.soundcloud.com/stream/738933715-the-programming-podcast-episode-2-binary-search.mp3
 publish: true
 ---
 
