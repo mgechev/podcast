@@ -1,4 +1,6 @@
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/mgechev/podcast/master/src/assets/logo.jpg" /></div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mgechev/podcast/master/src/assets/logo.jpg" />
+</p>
 
 The Programming Podcast with Minko Gechev is a weekly show that aims to make us better software engineers! With each new episode, you'll get exposed to a new idea in a brief and accessible way. Listening to the show:
 
