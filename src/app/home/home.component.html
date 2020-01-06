@@ -4,7 +4,7 @@
 
 <h1>Previous Episodes</h1>
 
-<article *ngFor="let episode of episodes.slice(0, episodes.length - 1)">
+<article (click)="goto(episode)" *ngFor="let episode of episodes.slice(0, episodes.length - 1)">
   <h3>Episode #{{ episode.number }}</h3>
   <h2>{{ episode.title }}</h2>
   <h4>{{ episode.published | date: 'shortDate' }}</h4>
