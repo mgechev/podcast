@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 import { map } from 'rxjs/operators';
+import { Episode } from '../shared/episode-summary.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-episode',
@@ -12,7 +14,7 @@ import { map } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
   episodes = [];
 
-  constructor(private _srs: ScullyRoutesService) {}
+  constructor(private _srs: ScullyRoutesService, private _router: Router) {}
 
   ngOnInit() {
     this._srs.available$
@@ -24,5 +26,9 @@ export class HomeComponent implements OnInit {
         )
       )
       .subscribe(episodes => (this.episodes = episodes));
+  }
+
+  goto(episode: Episode) {
+    this._router.navigateByUrl(episode.route);
   }
 }
