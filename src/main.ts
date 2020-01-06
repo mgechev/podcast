@@ -1,3 +1,6 @@
+// Google Analytics auto tracking
+import 'autotrack/lib/plugins/url-change-tracker';
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

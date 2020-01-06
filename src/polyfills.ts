@@ -69,4 +69,3 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
 
 // tslint:disable-next-line: align
 import 'zone.js/dist/task-tracking';
-import 'autotrack';
