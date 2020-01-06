@@ -55,13 +55,13 @@ export class PlayerComponent implements AfterViewInit {
     const slope = (RADIUS - y) / (RADIUS - x);
     const angle = 180 * (Math.abs(Math.atan(slope)) / Math.PI);
 
-    if (x < RADIUS && y > RADIUS) {
+    if (x <= RADIUS && y >= RADIUS) {
       return angle;
     }
-    if (x > RADIUS && y > RADIUS) {
+    if (x > RADIUS && y >= RADIUS) {
       return 180 - angle;
     }
-    if (x > RADIUS && y < RADIUS) {
+    if (x > RADIUS && y <= RADIUS) {
       return 180 + angle;
     }
     return 180 + (180 - angle);
