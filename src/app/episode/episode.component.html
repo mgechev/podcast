@@ -3,7 +3,9 @@
     ><app-episode-summary> </app-episode-summary
   ></app-episode-summary>
   <section class="episode-content">
-    <audio [src]="currentEpisode.audio" controls></audio>
+    <audio preload="auto" controls>
+      <source type="audio/mp3" [src]="currentEpisode.audio">
+    </audio>
     <scully-content></scully-content>
   </section>
 </div>

@@ -31,4 +31,6 @@
   />
 </svg>
 
-<audio #audio [src]="source"></audio>
+<audio preload="auto" #audio>
+  <source type="audio/mp3" [src]="source">
+</audio>
