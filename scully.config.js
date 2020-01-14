@@ -1,6 +1,6 @@
 exports.config = {
   projectRoot: './src/app',
-  outFolder: "docs",
+  outDir: "docs",
   routes: {
     '/episode/:slug': {
       type: 'contentFolder',
