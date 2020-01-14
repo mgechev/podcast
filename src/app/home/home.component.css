@@ -23,6 +23,7 @@ article {
   max-width: 1200px;
   min-width: 300px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 a {
