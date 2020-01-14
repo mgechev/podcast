@@ -1,8 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { ScullyRoutesService } from '@scullyio/ng-lib';
 import { Episode } from '../shared/episode-summary.component';
-import { map } from 'rxjs/operators';
-import { Router } from '@angular/router';
+import { Episodes } from '../shared/episodes';
 
 @Component({
   selector: 'app-episode',
@@ -13,20 +11,9 @@ import { Router } from '@angular/router';
 })
 export class EpisodeComponent implements OnInit {
   currentEpisode: Episode;
-  constructor(private _srs: ScullyRoutesService, private _router: Router) {}
+  constructor(private _episodes: Episodes) {}
 
   ngOnInit() {
-    this._srs.available$
-      .pipe(
-        map(all =>
-          all
-            .map((e, idx) => ({ ...e, number: idx }))
-            .filter(c => c.route === this._router.routerState.snapshot.url)
-            .pop()
-        )
-      )
-      .subscribe((c: Episode) => {
-        this.currentEpisode = c;
-      });
+    this._episodes.episodes$.subscribe(episodes => this.currentEpisode = episodes.shift());
   }
 }
