@@ -1,5 +1,5 @@
 ---
-title: Binary Search
+title: Partial Application (not Currying)
 description: Today we'll discuss partial application and currying. By the end of the episode, you'll understand what these two different concepts are how they are different from each other, and where you can apply them in practice. In between the episode, we'll also talk about the brilliant computer scientist Haskell Curry, and we'll mention the Curry-Howard isomorphism.
 audio: https://feeds.soundcloud.com/stream/743152012-the-programming-podcast-episode-3-partial-application-not-currying.mp3
 publish: true
@@ -18,4 +18,8 @@ Here you can find additional episodes:
 - [Moses Schönfinkel](https://en.wikipedia.org/wiki/Moses_Sch%C3%B6nfinkel)
 - [Curry–Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence)
 - [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/)
+
+**Transcript**
+
+
 
