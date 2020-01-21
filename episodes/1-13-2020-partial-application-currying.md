@@ -9,7 +9,7 @@ Today we'll discuss partial application and currying. By the end of the episode,
 
 In between the episode, we'll also talk about the brilliant computer scientist Haskell Curry, and we'll mention the Curry-Howard isomorphism.
 
-Here you can find additional episodes:
+Here you can find additional resources:
 
 - [Partial application of functions](https://hackernoon.com/partial-application-of-functions-dbe7d9b80760)
 - [Functional programming with JavaScript](https://blog.mgechev.com/2013/01/21/functional-programming-with-javascript/)
