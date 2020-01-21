@@ -1,11 +1,11 @@
 ---
 title: Quickselect
-description: Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th biggest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.
+description: Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th smallest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.
 audio: https://feeds.soundcloud.com/stream/746885413-the-programming-podcast-episode-4-quickselect.mp3
 publish: true
 ---
 
-Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th biggest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.
+Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th smallest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.
 
 Here you can find additional resources:
 
