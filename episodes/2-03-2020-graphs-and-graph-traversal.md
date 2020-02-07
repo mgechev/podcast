@@ -10,9 +10,9 @@ In this episode, we'll discuss graphs. You'll learn how this data structure look
 Here you can find additional resources:
 
 - [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
-- [Sample graph representation](https://github.com/mgechev/programming-podcast-samples/blob/master/5-graph-traversal/graph.ts)
-- [Implementation of DFS](https://github.com/mgechev/programming-podcast-samples/blob/master/5-graph-traversal/dfs.ts)
-- [Implementation of BFS](https://github.com/mgechev/programming-podcast-samples/blob/master/5-graph-traversal/bfs.ts)
+- [Sample graph representation](https://github.com/mgechev/programming-podcast-samples/blob/master/graph-traversal/graph.ts)
+- [Implementation of DFS](https://github.com/mgechev/programming-podcast-samples/blob/master/graph-traversal/dfs.ts)
+- [Implementation of BFS](https://github.com/mgechev/programming-podcast-samples/blob/master/graph-traversal/bfs.ts)
 - [Abstract syntax trees (AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
 - [Applications of graphs for garbage collection](https://en.wikipedia.org/wiki/Cheney%27s_algorithm)
 - [Prefetching of partials](https://blog.mgechev.com/2013/10/01/angularjs-partials-lazy-prefetching-strategy-weighted-directed-graph/)
