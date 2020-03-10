@@ -1,15 +1,15 @@
 ---
-title: Topological Sort
-description: In this episode, you'll learn the topological sort algorithm. Along the way, you'll understand what's a dependency graph and how topological sort operates on this data structure. We'll also discuss a few real-life examples where I had to implement topological sort myself!
-audio: https://feeds.soundcloud.com/stream/769948273-the-programming-podcast-episode-10-topological-sort.mp3
+title: Coupling and Cohesion
+description: Today you'll learn how keeping your abstractions more cohesive and less coupled can improve the quality and maintainability of your software.
+audio: https://feeds.soundcloud.com/stream/773562766-the-programming-podcast-coupling-and-cohesion.mp3
 publish: true
 ---
 
-The chances are that the information from this episode will come in handy to you during a coding interview and likely in real life!
+Today you'll learn how keeping your abstractions more cohesive and less coupled can improve the quality and maintainability of your software.
 
-In this episode, you'll learn the topological sort algorithm. Along the way, you'll understand what's a dependency graph and how topological sort operates on this data structure. We'll also discuss a few real-life examples where I had to implement topological sort myself!
-
-- [Depth-First Search implementation in TypeScript](https://github.com/mgechev/programming-podcast-samples/blob/master/graph-traversal/dfs.ts)
-- [Topological Sort implementation in TypeScript](https://github.com/mgechev/programming-podcast-samples/blob/master/topological-sort/topological-sort.ts)
+- [Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
+- [Cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
+- [An Investigation into Coupling Measures for C++](http://www.geocities.ws/walcelio_melo/icse97.coupling.pdf)
+- [Cohesion and Reuse in an Object-Oriented System](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.2683&rep=rep1&type=pdf)
 
 **Transcript**
