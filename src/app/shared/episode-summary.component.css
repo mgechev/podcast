@@ -62,3 +62,7 @@ app-player {
   margin-top: 35px;
   position: relative;
 }
+
+ngx-circular-player {
+  position: relative;
+}

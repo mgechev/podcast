@@ -27,6 +27,7 @@
     "@scullyio/scully": "0.0.57",
     "autotrack": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "ngx-circular-player": "0.0.2",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

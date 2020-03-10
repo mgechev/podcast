@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { EpisodeSummaryComponent } from './episode-summary.component';
 import { CommonModule } from '@angular/common';
-import { PlayerComponent } from './player.component';
 import { RouterModule } from '@angular/router';
+import { NgxCircularPlayerModule } from 'ngx-circular-player';
 import { Episodes } from './episodes';
 
 @NgModule({
-  declarations: [EpisodeSummaryComponent, PlayerComponent],
+  declarations: [EpisodeSummaryComponent],
   exports: [EpisodeSummaryComponent],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NgxCircularPlayerModule],
   providers: [{
     provide: Episodes,
     useClass: Episodes

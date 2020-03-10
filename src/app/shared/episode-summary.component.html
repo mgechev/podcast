@@ -4,11 +4,11 @@
     >
     {{ episode.title }}
   </h1>
-  <app-player
+  <ngx-circular-player
     *ngIf="showPlayer"
     [source]="episode.audio"
     width="120"
-  ></app-player>
+  ></ngx-circular-player>
 </section>
 <summary *ngIf="episode">
   {{ episode.description }}
