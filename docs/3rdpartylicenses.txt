@@ -80,6 +80,8 @@ THE SOFTWARE.
 dom-utils
 MIT
 
+ngx-circular-player
+
 regenerator-runtime
 MIT
 MIT License
