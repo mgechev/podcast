@@ -5,11 +5,19 @@ header {
 
 header a svg path {
   fill: #aaacac;
-  text-decoration: none;
 }
 
 header a svg path:hover {
   fill: #eee;
+}
+
+header a {
+  color: #aaacac;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #eee;
 }
 
 .menu,
@@ -43,7 +51,6 @@ header a svg path:hover {
 
 .social {
   margin-right: 20px;
-  color: #eee;
   font-size: 1.4em;
 }
 
