@@ -3,13 +3,13 @@ header {
   background-color: #111618;
 }
 
-header a {
-  color: #aaacac;
+header a svg path {
+  fill: #aaacac;
   text-decoration: none;
 }
 
-header a:hover {
-  color: #eee;
+header a svg path:hover {
+  fill: #eee;
 }
 
 .menu,
