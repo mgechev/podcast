@@ -24,7 +24,7 @@
     "@angular/router": "~9.0.0-rc.7",
     "@scullyio/init": "0.0.28",
     "@scullyio/ng-lib": "0.0.22",
-    "@scullyio/scully": "0.0.92",
+    "@scullyio/scully": "1.0.9",
     "autotrack": "^2.4.1",
     "ngx-circular-player": "0.0.2",
     "rxjs": "~6.5.3",
