@@ -32,138 +32,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="//fonts.googleapis.com/css?family=Roboto|Rubik&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.093d31b07bd46873ed80.css"><style>header[_ngcontent-jno-c8]{padding:15px;background-color:#111618}header[_ngcontent-jno-c8]   a[_ngcontent-jno-c8]   svg[_ngcontent-jno-c8]   path[_ngcontent-jno-c8]{fill:#aaacac}header[_ngcontent-jno-c8]   a[_ngcontent-jno-c8]   svg[_ngcontent-jno-c8]   path[_ngcontent-jno-c8]:hover{fill:#eee}header[_ngcontent-jno-c8]   a[_ngcontent-jno-c8]{color:#aaacac;text-decoration:none}header[_ngcontent-jno-c8]   a[_ngcontent-jno-c8]:hover{color:#eee}.menu[_ngcontent-jno-c8], .social[_ngcontent-jno-c8]{list-style:none}.menu[_ngcontent-jno-c8], .menu[_ngcontent-jno-c8]   li[_ngcontent-jno-c8], .social[_ngcontent-jno-c8], .social[_ngcontent-jno-c8]   li[_ngcontent-jno-c8]{display:inline-block;padding:0;margin:0}.menu[_ngcontent-jno-c8]   li[_ngcontent-jno-c8]{border-left:2px solid #333;padding-left:20px;padding-right:20px;font-family:Rubik,Helvetica,Arial,sans-serif;font-weight:500;text-transform:uppercase;font-size:12px}.menu[_ngcontent-jno-c8]   li[_ngcontent-jno-c8]:first-of-type{border:0}.social[_ngcontent-jno-c8]{margin-right:20px;font-size:1.4em}.social[_ngcontent-jno-c8]   li[_ngcontent-jno-c8]{margin-left:20px}.menu-wrapper[_ngcontent-jno-c8]{display:flex;justify-content:space-between}.title[_ngcontent-jno-c8]{padding:20px;text-align:center;font-weight:600;font-size:1.3em}.title[_ngcontent-jno-c8]   .host[_ngcontent-jno-c8]{font-style:italic;font-weight:100}.terminal[_ngcontent-jno-c8]{font-weight:900;font-style:normal;font-family:monospace;background-color:#000;color:#fff;display:inline-block;padding:5px;border-radius:3px;margin-right:4px;border:2px solid #777}</style><script charset="utf-8" src="1-es2015.1c168f5fe15b79d92727.js"></script><script charset="utf-8" src="8-es2015.da0c2fba07783e48c4e1.js"></script><style>h1[_ngcontent-jno-c12]{font-weight:400;font-size:3em;text-align:center}h2[_ngcontent-jno-c12]{font-size:1.8em;font-weight:300}article[_ngcontent-jno-c12]   h3[_ngcontent-jno-c12]{font-weight:200;color:#444}article[_ngcontent-jno-c12]{border:1px solid #eee;padding:20px;border-radius:5px;font-size:1.2em;width:60%;max-width:1200px;min-width:300px;margin:auto auto 20px}a[_ngcontent-jno-c12]{color:#222}a[_ngcontent-jno-c12]:hover{color:#000}</style><style>[_nghost-jno-c11]{display:flex;height:40vh;background-color:#333;flex-direction:column;justify-content:center}section[_ngcontent-jno-c11]{text-align:left;display:flex;flex-direction:row;justify-content:space-between;position:relative}section[_ngcontent-jno-c11], summary[_ngcontent-jno-c11]{width:50%;min-width:300px;max-width:1200px;margin-left:auto;margin-right:auto;height:150px}summary[_ngcontent-jno-c11]{display:block;color:#999;font-size:1.1em;margin-top:25px;height:120px}h1[_ngcontent-jno-c11], summary[_ngcontent-jno-c11]   a[_ngcontent-jno-c11]{color:#fff}h1[_ngcontent-jno-c11]{display:inline-block;border-left:2px solid #1ba8c4;padding-left:7px;font-weight:400;font-size:3.5em;text-align:left;margin-bottom:10px;display:flex;flex-direction:column;justify-content:center}h1[_ngcontent-jno-c11]   span[_ngcontent-jno-c11]{font-size:.5em;font-weight:200}app-player[_ngcontent-jno-c11]{display:block;width:120px;height:120px;margin-top:35px}app-player[_ngcontent-jno-c11], ngx-circular-player[_ngcontent-jno-c11]{position:relative}</style><style>svg[_ngcontent-jno-c10]{position:absolute;top:50%;left:50%;stroke:#fff;border-radius:100%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);pointer-events:none;z-index:0}svg[_ngcontent-jno-c10]   path[_ngcontent-jno-c10]{cursor:pointer}button[_ngcontent-jno-c10]{position:relative}.play[_ngcontent-jno-c10]{z-index:3;background:0 0!important;cursor:pointer;outline:0;border:none}.arrow[_ngcontent-jno-c10]{-webkit-transition:.3s;transition:.3s;width:0;height:0;border-top-color:transparent;border-top-style:solid;border-bottom-color:transparent;border-bottom-style:solid;border-left-style:solid;border-left-color:#eee;margin:auto}.pause[_ngcontent-jno-c10], .play[_ngcontent-jno-c10]{width:100%;height:100%;border-radius:50%}.pause[_ngcontent-jno-c10]{-webkit-transition:opacity .3s;transition:opacity .3s}.pause[_ngcontent-jno-c10], .pause[_ngcontent-jno-c10]   .after[_ngcontent-jno-c10], .pause[_ngcontent-jno-c10]   .before[_ngcontent-jno-c10], .play[_ngcontent-jno-c10]{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.pause[_ngcontent-jno-c10]   .after[_ngcontent-jno-c10], .pause[_ngcontent-jno-c10]   .before[_ngcontent-jno-c10]{content:"";background-color:#eee;display:inline-block;opacity:1}.hidden-arrow[_ngcontent-jno-c10]{border-left-width:0!important}.hidden[_ngcontent-jno-c10]{opacity:0}</style><script>window['ScullyIO']='generated';</script></head>
+<link rel="stylesheet" href="styles.093d31b07bd46873ed80.css"><style>header[_ngcontent-rmr-c8]{padding:15px;background-color:#111618}header[_ngcontent-rmr-c8]   a[_ngcontent-rmr-c8]   svg[_ngcontent-rmr-c8]   path[_ngcontent-rmr-c8]{fill:#aaacac}header[_ngcontent-rmr-c8]   a[_ngcontent-rmr-c8]   svg[_ngcontent-rmr-c8]   path[_ngcontent-rmr-c8]:hover{fill:#eee}header[_ngcontent-rmr-c8]   a[_ngcontent-rmr-c8]{color:#aaacac;text-decoration:none}header[_ngcontent-rmr-c8]   a[_ngcontent-rmr-c8]:hover{color:#eee}.menu[_ngcontent-rmr-c8], .social[_ngcontent-rmr-c8]{list-style:none}.menu[_ngcontent-rmr-c8], .menu[_ngcontent-rmr-c8]   li[_ngcontent-rmr-c8], .social[_ngcontent-rmr-c8], .social[_ngcontent-rmr-c8]   li[_ngcontent-rmr-c8]{display:inline-block;padding:0;margin:0}.menu[_ngcontent-rmr-c8]   li[_ngcontent-rmr-c8]{border-left:2px solid #333;padding-left:20px;padding-right:20px;font-family:Rubik,Helvetica,Arial,sans-serif;font-weight:500;text-transform:uppercase;font-size:12px}.menu[_ngcontent-rmr-c8]   li[_ngcontent-rmr-c8]:first-of-type{border:0}.social[_ngcontent-rmr-c8]{margin-right:20px;font-size:1.4em}.social[_ngcontent-rmr-c8]   li[_ngcontent-rmr-c8]{margin-left:20px}.menu-wrapper[_ngcontent-rmr-c8]{display:flex;justify-content:space-between}.title[_ngcontent-rmr-c8]{padding:20px;text-align:center;font-weight:600;font-size:1.3em}.title[_ngcontent-rmr-c8]   .host[_ngcontent-rmr-c8]{font-style:italic;font-weight:100}.terminal[_ngcontent-rmr-c8]{font-weight:900;font-style:normal;font-family:monospace;background-color:#000;color:#fff;display:inline-block;padding:5px;border-radius:3px;margin-right:4px;border:2px solid #777}</style><script charset="utf-8" src="1-es2015.b056f2543a6b11aba16e.js"></script><script charset="utf-8" src="8-es2015.303ec1b05382d847ecaf.js"></script><style>h1[_ngcontent-rmr-c12]{font-weight:400;font-size:3em;text-align:center}h2[_ngcontent-rmr-c12]{font-size:1.8em;font-weight:300}article[_ngcontent-rmr-c12]   h3[_ngcontent-rmr-c12]{font-weight:200;color:#444}article[_ngcontent-rmr-c12]{border:1px solid #eee;padding:20px;border-radius:5px;font-size:1.2em;width:60%;max-width:1200px;min-width:300px;margin:auto auto 20px}a[_ngcontent-rmr-c12]{color:#222}a[_ngcontent-rmr-c12]:hover{color:#000}</style><style>[_nghost-rmr-c11]{display:flex;height:40vh;background-color:#333;flex-direction:column;justify-content:center}section[_ngcontent-rmr-c11]{text-align:left;display:flex;flex-direction:row;justify-content:space-between;position:relative}section[_ngcontent-rmr-c11], summary[_ngcontent-rmr-c11]{width:50%;min-width:300px;max-width:1200px;margin-left:auto;margin-right:auto;height:150px}summary[_ngcontent-rmr-c11]{display:block;color:#999;font-size:1.1em;margin-top:25px;height:120px}h1[_ngcontent-rmr-c11], summary[_ngcontent-rmr-c11]   a[_ngcontent-rmr-c11]{color:#fff}h1[_ngcontent-rmr-c11]{display:inline-block;border-left:2px solid #1ba8c4;padding-left:7px;font-weight:400;font-size:3.5em;text-align:left;margin-bottom:10px;display:flex;flex-direction:column;justify-content:center}h1[_ngcontent-rmr-c11]   span[_ngcontent-rmr-c11]{font-size:.5em;font-weight:200}app-player[_ngcontent-rmr-c11]{display:block;width:120px;height:120px;margin-top:35px}app-player[_ngcontent-rmr-c11], ngx-circular-player[_ngcontent-rmr-c11]{position:relative}</style><style>svg[_ngcontent-rmr-c10]{position:absolute;top:50%;left:50%;stroke:#fff;border-radius:100%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);pointer-events:none;z-index:0}svg[_ngcontent-rmr-c10]   path[_ngcontent-rmr-c10]{cursor:pointer}button[_ngcontent-rmr-c10]{position:relative}.play[_ngcontent-rmr-c10]{z-index:3;background:0 0!important;cursor:pointer;outline:0;border:none}.arrow[_ngcontent-rmr-c10]{-webkit-transition:.3s;transition:.3s;width:0;height:0;border-top-color:transparent;border-top-style:solid;border-bottom-color:transparent;border-bottom-style:solid;border-left-style:solid;border-left-color:#eee;margin:auto}.pause[_ngcontent-rmr-c10], .play[_ngcontent-rmr-c10]{width:100%;height:100%;border-radius:50%}.pause[_ngcontent-rmr-c10]{-webkit-transition:opacity .3s;transition:opacity .3s}.pause[_ngcontent-rmr-c10], .pause[_ngcontent-rmr-c10]   .after[_ngcontent-rmr-c10], .pause[_ngcontent-rmr-c10]   .before[_ngcontent-rmr-c10], .play[_ngcontent-rmr-c10]{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.pause[_ngcontent-rmr-c10]   .after[_ngcontent-rmr-c10], .pause[_ngcontent-rmr-c10]   .before[_ngcontent-rmr-c10]{content:"";background-color:#eee;display:inline-block;opacity:1}.hidden-arrow[_ngcontent-rmr-c10]{border-left-width:0!important}.hidden[_ngcontent-rmr-c10]{opacity:0}</style><script>window['ScullyIO']='generated';</script></head>
 <body scully-version="0.0.0">
-  <app-root _nghost-jno-c8="" ng-version="9.0.7"><header _ngcontent-jno-c8=""><div _ngcontent-jno-c8="" class="menu-wrapper"><ul _ngcontent-jno-c8="" class="menu"><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" routerlink="/" href="/">Home</a></li><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" routerlink="/about" href="/about">About</a></li></ul><ul _ngcontent-jno-c8="" class="social"><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" href="https://twitter.com/mgechev" target="_blank"><svg _ngcontent-jno-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-jno-c8="" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a></li><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" href="https://open.spotify.com/show/0bMhQFbGCgFS4p6cwY4LZ7?si=ArYh5OqjRiC_W3ZsHYC2aQ" target="_blank"><svg _ngcontent-jno-c8="" width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path _ngcontent-jno-c8="" d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"></path></svg></a></li><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" href="https://podcasts.apple.com/us/podcast/programming/id1493739285" target="_blank"><svg _ngcontent-jno-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-jno-c8="" d="M22 17.607c-.786 2.28-3.139 6.317-5.563 6.361-1.608.031-2.125-.953-3.963-.953-1.837 0-2.412.923-3.932.983-2.572.099-6.542-5.827-6.542-10.995 0-4.747 3.308-7.1 6.198-7.143 1.55-.028 3.014 1.045 3.959 1.045.949 0 2.727-1.29 4.596-1.101.782.033 2.979.315 4.389 2.377-3.741 2.442-3.158 7.549.858 9.426zm-5.222-17.607c-2.826.114-5.132 3.079-4.81 5.531 2.612.203 5.118-2.725 4.81-5.531z"></path></svg></a></li><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" href="https://soundcloud.com/the-programming-podcast" target="_blank"><svg _ngcontent-jno-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-jno-c8="" d="M7 17.939h-1v-8.068c.308-.231.639-.429 1-.566v8.634zm3 0h1v-9.224c-.229.265-.443.548-.621.857l-.379-.184v8.551zm-2 0h1v-8.848c-.508-.079-.623-.05-1-.01v8.858zm-4 0h1v-7.02c-.312.458-.555.971-.692 1.535l-.308-.182v5.667zm-3-5.25c-.606.547-1 1.354-1 2.268 0 .914.394 1.721 1 2.268v-4.536zm18.879-.671c-.204-2.837-2.404-5.079-5.117-5.079-1.022 0-1.964.328-2.762.877v10.123h9.089c1.607 0 2.911-1.393 2.911-3.106 0-2.233-2.168-3.772-4.121-2.815zm-16.879-.027c-.302-.024-.526-.03-1 .122v5.689c.446.143.636.138 1 .138v-5.949z"></path></svg></a></li><li _ngcontent-jno-c8=""><a _ngcontent-jno-c8="" href="http://feeds.soundcloud.com/users/soundcloud:users:760338451/sounds.rss" target="_blank"><svg _ngcontent-jno-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-jno-c8="" d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"></path></svg></a></li></ul></div></header><section _ngcontent-jno-c8="" class="title"><span _ngcontent-jno-c8="" class="terminal">&gt;_</span>Programming<span _ngcontent-jno-c8="" class="host"> podcast with Minko Gechev</span></section><router-outlet _ngcontent-jno-c8=""></router-outlet><app-episode _nghost-jno-c12=""><app-episode-summary _ngcontent-jno-c12="" _nghost-jno-c11=""><section _ngcontent-jno-c11=""><h1 _ngcontent-jno-c11=""><span _ngcontent-jno-c11="">Episode #21</span> Maps, Hash Maps, Tree Maps, and Hash Tables </h1><ngx-circular-player _ngcontent-jno-c11="" width="120" _nghost-jno-c10=""><button _ngcontent-jno-c10="" class="play" style="width: 80px; height: 80px;"><div _ngcontent-jno-c10="" class="arrow" style="border-top-width: 15px; border-bottom-width: 15px; border-left-width: 24px;"></div><span _ngcontent-jno-c10="" class="pause hidden"><span _ngcontent-jno-c10="" class="before" style="width: 12px; height: 34.2857px; left: calc(50% - 10px);"></span><span _ngcontent-jno-c10="" class="after" style="width: 12px; height: 34.2857px; left: calc(50% + 10px);"></span></span></button><svg _ngcontent-jno-c10="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="width: 120px;"><circle _ngcontent-jno-c10="" fill="transparent" cx="50" cy="50" r="32" stroke="#eee" stroke-width="2"></circle><path _ngcontent-jno-c10="" pointer-events="stroke" d="M 50 50
+  <app-root _nghost-rmr-c8="" ng-version="9.0.7"><header _ngcontent-rmr-c8=""><div _ngcontent-rmr-c8="" class="menu-wrapper"><ul _ngcontent-rmr-c8="" class="menu"><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" routerlink="/" href="/">Home</a></li><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" routerlink="/about" href="/about">About</a></li></ul><ul _ngcontent-rmr-c8="" class="social"><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" href="https://twitter.com/mgechev" target="_blank"><svg _ngcontent-rmr-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-rmr-c8="" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a></li><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" href="https://open.spotify.com/show/0bMhQFbGCgFS4p6cwY4LZ7?si=ArYh5OqjRiC_W3ZsHYC2aQ" target="_blank"><svg _ngcontent-rmr-c8="" width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path _ngcontent-rmr-c8="" d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"></path></svg></a></li><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" href="https://podcasts.apple.com/us/podcast/programming/id1493739285" target="_blank"><svg _ngcontent-rmr-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-rmr-c8="" d="M22 17.607c-.786 2.28-3.139 6.317-5.563 6.361-1.608.031-2.125-.953-3.963-.953-1.837 0-2.412.923-3.932.983-2.572.099-6.542-5.827-6.542-10.995 0-4.747 3.308-7.1 6.198-7.143 1.55-.028 3.014 1.045 3.959 1.045.949 0 2.727-1.29 4.596-1.101.782.033 2.979.315 4.389 2.377-3.741 2.442-3.158 7.549.858 9.426zm-5.222-17.607c-2.826.114-5.132 3.079-4.81 5.531 2.612.203 5.118-2.725 4.81-5.531z"></path></svg></a></li><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" href="https://soundcloud.com/the-programming-podcast" target="_blank"><svg _ngcontent-rmr-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-rmr-c8="" d="M7 17.939h-1v-8.068c.308-.231.639-.429 1-.566v8.634zm3 0h1v-9.224c-.229.265-.443.548-.621.857l-.379-.184v8.551zm-2 0h1v-8.848c-.508-.079-.623-.05-1-.01v8.858zm-4 0h1v-7.02c-.312.458-.555.971-.692 1.535l-.308-.182v5.667zm-3-5.25c-.606.547-1 1.354-1 2.268 0 .914.394 1.721 1 2.268v-4.536zm18.879-.671c-.204-2.837-2.404-5.079-5.117-5.079-1.022 0-1.964.328-2.762.877v10.123h9.089c1.607 0 2.911-1.393 2.911-3.106 0-2.233-2.168-3.772-4.121-2.815zm-16.879-.027c-.302-.024-.526-.03-1 .122v5.689c.446.143.636.138 1 .138v-5.949z"></path></svg></a></li><li _ngcontent-rmr-c8=""><a _ngcontent-rmr-c8="" href="http://feeds.soundcloud.com/users/soundcloud:users:760338451/sounds.rss" target="_blank"><svg _ngcontent-rmr-c8="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path _ngcontent-rmr-c8="" d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"></path></svg></a></li></ul></div></header><section _ngcontent-rmr-c8="" class="title"><span _ngcontent-rmr-c8="" class="terminal">&gt;_</span>Programming<span _ngcontent-rmr-c8="" class="host"> podcast with Minko Gechev</span></section><router-outlet _ngcontent-rmr-c8=""></router-outlet><app-episode _nghost-rmr-c12=""><app-episode-summary _ngcontent-rmr-c12="" _nghost-rmr-c11=""><section _ngcontent-rmr-c11=""><h1 _ngcontent-rmr-c11=""><span _ngcontent-rmr-c11="">Episode #22</span> Signals </h1><ngx-circular-player _ngcontent-rmr-c11="" width="120" _nghost-rmr-c10=""><button _ngcontent-rmr-c10="" class="play" style="width: 80px; height: 80px;"><div _ngcontent-rmr-c10="" class="arrow" style="border-top-width: 15px; border-bottom-width: 15px; border-left-width: 24px;"></div><span _ngcontent-rmr-c10="" class="pause hidden"><span _ngcontent-rmr-c10="" class="before" style="width: 12px; height: 34.2857px; left: calc(50% - 10px);"></span><span _ngcontent-rmr-c10="" class="after" style="width: 12px; height: 34.2857px; left: calc(50% + 10px);"></span></span></button><svg _ngcontent-rmr-c10="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="width: 120px;"><circle _ngcontent-rmr-c10="" fill="transparent" cx="50" cy="50" r="32" stroke="#eee" stroke-width="2"></circle><path _ngcontent-rmr-c10="" pointer-events="stroke" d="M 50 50
        m -50, 0
        a 50,50 0 1,0 100,0
-       a 50,50 0 1,0 -100,0" stroke-miterlimit="10" fill="transparent" style="cursor: pointer;" stroke="#858585" stroke-width="20"></path><path _ngcontent-jno-c10="" d="M 50 50
+       a 50,50 0 1,0 -100,0" stroke-miterlimit="10" fill="transparent" style="cursor: pointer;" stroke="#858585" stroke-width="20"></path><path _ngcontent-rmr-c10="" d="M 50 50
        m -50, 0
        a 50,50 0 1,0 100,0
-       a 50,50 0 1,0 -100,0" fill="transparent" stroke-miterlimit="10" stroke="#fff" stroke-width="20" stroke-dasharray="314.20355224609375" stroke-dashoffset="314.20355224609375"></path></svg><audio _ngcontent-jno-c10="" preload="auto"><source _ngcontent-jno-c10="" type="audio/mp3" src="https://feeds.soundcloud.com/stream/849994546-the-programming-podcast-episode-21-maps-hash-maps-tree-maps-and-hash-tables.mp3"></audio></ngx-circular-player><!----></section><!----><summary _ngcontent-jno-c11=""> Today in less than 20 minutes, we'll explore what maps are and how they work under the hood. We'll talk about the differences between treemaps, hash maps, and hash tables. We'll dig pretty in-depth...By the end of the episode, you'll understand how to implement hash tables using an array, hash function, and a linked list! <a _ngcontent-jno-c11="" href="/episode/6-30-2020-maps-hash-maps-tree-maps-and-hash-tables">Find more</a><!----></summary><!----></app-episode-summary>
+       a 50,50 0 1,0 -100,0" fill="transparent" stroke-miterlimit="10" stroke="#fff" stroke-width="20" stroke-dasharray="314.20355224609375" stroke-dashoffset="314.20355224609375"></path></svg><audio _ngcontent-rmr-c10="" preload="auto"><source _ngcontent-rmr-c10="" type="audio/mp3" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2025-0-10/392871647-44100-2-c41838b019f0e.m4a"></audio></ngx-circular-player><!----></section><!----><summary _ngcontent-rmr-c11=""> In this episode, we'll explore a concept called Signal that has been getting a lot of traction in JavaScript over the past few years. I'll describe a simple implementation so you can understand the internals and then see how it relates to the traditional object-oriented design pattern observer. <a _ngcontent-rmr-c11="" href="/episode/1-10-2025-signals">Find more</a><!----></summary><!----></app-episode-summary>
 
-<h1 _ngcontent-jno-c12="">Previous Episodes</h1>
+<h1 _ngcontent-rmr-c12="">Previous Episodes</h1>
 
-<article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #20</h3>
-  <h2 _ngcontent-jno-c12="">Static and Dynamic Systems</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we'll look into static and dynamic systems. We'll discuss what does it mean for a programming language or a framework to be static or dynamic. In the second part of the podcast, we'll focus on some of the properties of static systems and how they can help in better compile-time optimizations, development experience, and more!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/6-23-2020-static-and-dynamic-systems-programming-frameworks">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #19</h3>
-  <h2 _ngcontent-jno-c12="">Type Systems and Type Checking</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode, we'll look at the very basics of type systems and their enforcement. We'll discuss strongly and weakly typed languages. After that, we'll dig into different enforcement strategies - runtime with dynamic typing and compile-time with static typing.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/6-15-2020-type-systems-and-type-checking">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #18</h3>
-  <h2 _ngcontent-jno-c12="">How JavaScript Bundlers Work</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode, we'll look at what data structures and algorithms JavaScript bundlers use. We'll talk about ECMAScript modules, strongly connected components, depth-first search, and more! Enjoy!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/5-25-2020-how-javascript-bundlers-work">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #17</h3>
-  <h2 _ngcontent-jno-c12="">Dependency Injection</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we'll talk about using dependency injection across paradigms! You'll understand what this pattern is all about and how to use it.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/4-20-2020-dependency-injection">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #16</h3>
-  <h2 _ngcontent-jno-c12="">Memoization</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we'll learn about memoization! Memoization is a practice that helps us improve the performance of our apps using caching. In the episode, we'll also discuss pure functions, caching strategies, and much more!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/4-13-2020-memoization">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #15</h3>
-  <h2 _ngcontent-jno-c12="">Compilers, Linters, and Formatters</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode of the programming podcast, we'll discuss static analysis and code transformation. In particular, we'll look at the difference between compilers, linters, and formatters. By the end of the episode, you'll understand what tool you should use to improve your development experience and team processes.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/4-6-2020-compilers-linters-formatters">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #14</h3>
-  <h2 _ngcontent-jno-c12="">The Four Principles of OOP</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In today's episode, you'll learn the four principles of object-oriented programming. We'll discuss abstraction, inheritance, encapsulation, and polymorphism. By the end of the show, you'll understand each one of them; you'll know how they relate to each other, and how to use them in practice.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/3-30-2020-four-principles-of-object-oriented-programming">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #13</h3>
-  <h2 _ngcontent-jno-c12="">Binary Heaps</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we're going to discuss the binary heap data structure. In this episode, you'll learn where to use heaps in practice, how they can come handy to you during a coding interview, and how to implement them!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/3-23-2020-binary-heaps">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #12</h3>
-  <h2 _ngcontent-jno-c12="">COVID-19. Epidemic modeling with SIR.</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Instead of digging into algorithms and data structures, today, you'll learn about epidemic modeling. In 9 minutes in this episode, you'll get a mathematical intuition on the spread of COVID-19 and the essential variables we can control, which can help us fight the virus.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/3-16-2020-covid-19-epidemic-modeling-sir">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #11</h3>
-  <h2 _ngcontent-jno-c12="">Coupling and Cohesion</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today you'll learn how keeping your abstractions more cohesive and less coupled can improve the quality and maintainability of your software.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/3-9-2020-coupling-and-cohesion">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #10</h3>
-  <h2 _ngcontent-jno-c12="">Topological Sort</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode, you'll learn the topological sort algorithm. Along the way, you'll understand what's a dependency graph and how topological sort operates on this data structure. We'll also discuss a few real-life examples where I had to implement topological sort myself!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/3-2-2020-topological-sort">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #9</h3>
-  <h2 _ngcontent-jno-c12="">Sorting. Counting Sort.</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Have you ever been frustrated during interviews thinking that your interviewer expects you to have memorized a bunch of sorting algorithms you'd never need in real life? In this episode of the podcast learn how to approach such situations. In performance critical systems you may have to implement an efficient sorting yourself. Learn how to beat the built-in algorithm in a few lines of code!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/2-25-2020-sorting-counting-sort">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #8</h3>
-  <h2 _ngcontent-jno-c12="">Decorator Pattern</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today you'll learn how at runtime, you can enhance the behavior or existing objects using the decorator pattern. In this episode, we'll discuss the advantages of decorators over inheritance and look at two examples from real-life - implementing a network communication protocol and enriching user interface components.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/2-17-2020-decorator-pattern">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #7</h3>
-  <h2 _ngcontent-jno-c12="">Tries</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In the episode today, we'll talk about the trie data structure. You'll learn what tries are, how you can use them in practice, and how to implement them in your favorite programming language!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/2-10-2020-tries">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #6</h3>
-  <h2 _ngcontent-jno-c12="">Graphs and Graph Traversal</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode, we'll discuss graphs. You'll learn how this data structure looks like and what are its applications. Later on, we'll talk about algorithms for traversing graphs. You'll understand how breadth-first search and depth-first search work and when you should use one instead of the other. Topics we'll also touch on are chromatic graphs and finding the shortest path.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/2-03-2020-graphs-and-graph-traversal">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #5</h3>
-  <h2 _ngcontent-jno-c12="">Arrays and Linked Lists</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode, we'll discuss two fundamental data structures in computer science - arrays and linked lists. Their understanding is essential not only in your day to day job but also for performing well on your next coding interview.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/1-27-2020-arrays-linked-lists">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #4</h3>
-  <h2 _ngcontent-jno-c12="">Quickselect</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th smallest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/1-20-2020-quickselect-algorithm">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #3</h3>
-  <h2 _ngcontent-jno-c12="">Partial Application (not Currying)</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we'll discuss partial application and currying. By the end of the episode, you'll understand what these two different concepts are how they are different from each other, and where you can apply them in practice. In between the episode, we'll also talk about the brilliant computer scientist Haskell Curry, and we'll mention the Curry-Howard isomorphism.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/1-13-2020-partial-application-currying">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #2</h3>
-  <h2 _ngcontent-jno-c12="">Binary Search</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">Today we'll discuss the binary search algorithm. We'll go through several examples when the algorithm makes sense and discuss in detail how it works. By the end of the episode, you'll know when to apply a binary search and know why it's more efficient than a linear search.</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/1-5-2020-binary-search">Find more</a></p>
-</article><article _ngcontent-jno-c12="">
-  <h3 _ngcontent-jno-c12="">Episode #1</h3>
-  <h2 _ngcontent-jno-c12="">How Compilers Work</h2>
-  <h4 _ngcontent-jno-c12=""></h4>
-  <p _ngcontent-jno-c12="">In this episode, we discuss how compilers work. By the end of the show, you'll have a high-level understanding of the phases the source code you write goes though before executed!</p>
-  <p _ngcontent-jno-c12=""><a _ngcontent-jno-c12="" href="/episode/1-4-2020-how-compilers-work">Find more</a></p>
+<article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #21</h3>
+  <h2 _ngcontent-rmr-c12="">Maps, Hash Maps, Tree Maps, and Hash Tables</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today in less than 20 minutes, we'll explore what maps are and how they work under the hood. We'll talk about the differences between treemaps, hash maps, and hash tables. We'll dig pretty in-depth...By the end of the episode, you'll understand how to implement hash tables using an array, hash function, and a linked list!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/6-30-2020-maps-hash-maps-tree-maps-and-hash-tables">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #20</h3>
+  <h2 _ngcontent-rmr-c12="">Static and Dynamic Systems</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we'll look into static and dynamic systems. We'll discuss what does it mean for a programming language or a framework to be static or dynamic. In the second part of the podcast, we'll focus on some of the properties of static systems and how they can help in better compile-time optimizations, development experience, and more!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/6-23-2020-static-and-dynamic-systems-programming-frameworks">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #19</h3>
+  <h2 _ngcontent-rmr-c12="">Type Systems and Type Checking</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode, we'll look at the very basics of type systems and their enforcement. We'll discuss strongly and weakly typed languages. After that, we'll dig into different enforcement strategies - runtime with dynamic typing and compile-time with static typing.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/6-15-2020-type-systems-and-type-checking">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #18</h3>
+  <h2 _ngcontent-rmr-c12="">How JavaScript Bundlers Work</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode, we'll look at what data structures and algorithms JavaScript bundlers use. We'll talk about ECMAScript modules, strongly connected components, depth-first search, and more! Enjoy!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/5-25-2020-how-javascript-bundlers-work">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #17</h3>
+  <h2 _ngcontent-rmr-c12="">Dependency Injection</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we'll talk about using dependency injection across paradigms! You'll understand what this pattern is all about and how to use it.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/4-20-2020-dependency-injection">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #16</h3>
+  <h2 _ngcontent-rmr-c12="">Memoization</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we'll learn about memoization! Memoization is a practice that helps us improve the performance of our apps using caching. In the episode, we'll also discuss pure functions, caching strategies, and much more!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/4-13-2020-memoization">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #15</h3>
+  <h2 _ngcontent-rmr-c12="">Compilers, Linters, and Formatters</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode of the programming podcast, we'll discuss static analysis and code transformation. In particular, we'll look at the difference between compilers, linters, and formatters. By the end of the episode, you'll understand what tool you should use to improve your development experience and team processes.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/4-6-2020-compilers-linters-formatters">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #14</h3>
+  <h2 _ngcontent-rmr-c12="">The Four Principles of OOP</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In today's episode, you'll learn the four principles of object-oriented programming. We'll discuss abstraction, inheritance, encapsulation, and polymorphism. By the end of the show, you'll understand each one of them; you'll know how they relate to each other, and how to use them in practice.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/3-30-2020-four-principles-of-object-oriented-programming">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #13</h3>
+  <h2 _ngcontent-rmr-c12="">Binary Heaps</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we're going to discuss the binary heap data structure. In this episode, you'll learn where to use heaps in practice, how they can come handy to you during a coding interview, and how to implement them!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/3-23-2020-binary-heaps">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #12</h3>
+  <h2 _ngcontent-rmr-c12="">COVID-19. Epidemic modeling with SIR.</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Instead of digging into algorithms and data structures, today, you'll learn about epidemic modeling. In 9 minutes in this episode, you'll get a mathematical intuition on the spread of COVID-19 and the essential variables we can control, which can help us fight the virus.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/3-16-2020-covid-19-epidemic-modeling-sir">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #11</h3>
+  <h2 _ngcontent-rmr-c12="">Coupling and Cohesion</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today you'll learn how keeping your abstractions more cohesive and less coupled can improve the quality and maintainability of your software.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/3-9-2020-coupling-and-cohesion">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #10</h3>
+  <h2 _ngcontent-rmr-c12="">Topological Sort</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode, you'll learn the topological sort algorithm. Along the way, you'll understand what's a dependency graph and how topological sort operates on this data structure. We'll also discuss a few real-life examples where I had to implement topological sort myself!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/3-2-2020-topological-sort">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #9</h3>
+  <h2 _ngcontent-rmr-c12="">Sorting. Counting Sort.</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Have you ever been frustrated during interviews thinking that your interviewer expects you to have memorized a bunch of sorting algorithms you'd never need in real life? In this episode of the podcast learn how to approach such situations. In performance critical systems you may have to implement an efficient sorting yourself. Learn how to beat the built-in algorithm in a few lines of code!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/2-25-2020-sorting-counting-sort">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #8</h3>
+  <h2 _ngcontent-rmr-c12="">Decorator Pattern</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today you'll learn how at runtime, you can enhance the behavior or existing objects using the decorator pattern. In this episode, we'll discuss the advantages of decorators over inheritance and look at two examples from real-life - implementing a network communication protocol and enriching user interface components.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/2-17-2020-decorator-pattern">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #7</h3>
+  <h2 _ngcontent-rmr-c12="">Tries</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In the episode today, we'll talk about the trie data structure. You'll learn what tries are, how you can use them in practice, and how to implement them in your favorite programming language!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/2-10-2020-tries">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #6</h3>
+  <h2 _ngcontent-rmr-c12="">Graphs and Graph Traversal</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode, we'll discuss graphs. You'll learn how this data structure looks like and what are its applications. Later on, we'll talk about algorithms for traversing graphs. You'll understand how breadth-first search and depth-first search work and when you should use one instead of the other. Topics we'll also touch on are chromatic graphs and finding the shortest path.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/2-03-2020-graphs-and-graph-traversal">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #5</h3>
+  <h2 _ngcontent-rmr-c12="">Arrays and Linked Lists</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode, we'll discuss two fundamental data structures in computer science - arrays and linked lists. Their understanding is essential not only in your day to day job but also for performing well on your next coding interview.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/1-27-2020-arrays-linked-lists">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #4</h3>
+  <h2 _ngcontent-rmr-c12="">Quickselect</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th smallest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/1-20-2020-quickselect-algorithm">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #3</h3>
+  <h2 _ngcontent-rmr-c12="">Partial Application (not Currying)</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we'll discuss partial application and currying. By the end of the episode, you'll understand what these two different concepts are how they are different from each other, and where you can apply them in practice. In between the episode, we'll also talk about the brilliant computer scientist Haskell Curry, and we'll mention the Curry-Howard isomorphism.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/1-13-2020-partial-application-currying">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #2</h3>
+  <h2 _ngcontent-rmr-c12="">Binary Search</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">Today we'll discuss the binary search algorithm. We'll go through several examples when the algorithm makes sense and discuss in detail how it works. By the end of the episode, you'll know when to apply a binary search and know why it's more efficient than a linear search.</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/1-5-2020-binary-search">Find more</a></p>
+</article><article _ngcontent-rmr-c12="">
+  <h3 _ngcontent-rmr-c12="">Episode #1</h3>
+  <h2 _ngcontent-rmr-c12="">How Compilers Work</h2>
+  <h4 _ngcontent-rmr-c12=""></h4>
+  <p _ngcontent-rmr-c12="">In this episode, we discuss how compilers work. By the end of the show, you'll have a high-level understanding of the phases the source code you write goes though before executed!</p>
+  <p _ngcontent-rmr-c12=""><a _ngcontent-rmr-c12="" href="/episode/1-4-2020-how-compilers-work">Find more</a></p>
 </article><!---->
 </app-episode><!----></app-root>
   <script>
@@ -173,6 +179,6 @@
     ga('send', 'pageview');
   </script>
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script src="runtime-es2015.72dfb115b38e1a5cae53.js" type="module"></script><script src="runtime-es5.72dfb115b38e1a5cae53.js" nomodule="" defer=""></script><script src="polyfills-es5.22dcc4f51698e2d59bbe.js" nomodule="" defer=""></script><script src="polyfills-es2015.28e5fe2e482b7d6bfdcf.js" type="module"></script><script src="main-es2015.3e62a429d3987c8a6c7c.js" type="module"></script><script src="main-es5.3e62a429d3987c8a6c7c.js" nomodule="" defer=""></script>
+<script src="runtime-es2015.1cab46f99ceb8feb6812.js" type="module"></script><script src="runtime-es5.1cab46f99ceb8feb6812.js" nomodule="" defer=""></script><script src="polyfills-es5.7ccb57a498d9f9e6d519.js" nomodule="" defer=""></script><script src="polyfills-es2015.63fcd2f134ef89f8dd10.js" type="module"></script><script src="main-es2015.112a347d2a4624116929.js" type="module"></script><script src="main-es5.112a347d2a4624116929.js" nomodule="" defer=""></script>
 
 </body></html>
