@@ -1,7 +1,7 @@
 ---
 title: Binary Heaps
 description: Today we're going to discuss the binary heap data structure. In this episode, you'll learn where to use heaps in practice, how they can come handy to you during a coding interview, and how to implement them!
-audio: https://feeds.soundcloud.com/stream/782072245-the-programming-podcast-binary-heaps.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292375/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135414-44100-2-067545a0ffc66fcc.mp3
 publish: true
 ---
 

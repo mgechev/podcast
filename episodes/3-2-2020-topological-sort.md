@@ -1,7 +1,7 @@
 ---
 title: Topological Sort
 description: In this episode, you'll learn the topological sort algorithm. Along the way, you'll understand what's a dependency graph and how topological sort operates on this data structure. We'll also discuss a few real-life examples where I had to implement topological sort myself!
-audio: https://feeds.soundcloud.com/stream/769948273-the-programming-podcast-episode-10-topological-sort.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292370/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135406-44100-2-1b86d41631cfb366.mp3
 publish: true
 ---
 

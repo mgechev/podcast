@@ -1,7 +1,7 @@
 ---
 title: COVID-19. Epidemic modeling with SIR.
 description: Instead of digging into algorithms and data structures, today, you'll learn about epidemic modeling. In 9 minutes in this episode, you'll get a mathematical intuition on the spread of COVID-19 and the essential variables we can control, which can help us fight the virus.
-audio: https://feeds.soundcloud.com/stream/777444139-the-programming-podcast-covid-19.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292366/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135403-44100-2-9266037dbe8d6ac2.mp3
 publish: true
 ---
 

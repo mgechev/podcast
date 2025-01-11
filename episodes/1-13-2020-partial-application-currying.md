@@ -1,7 +1,7 @@
 ---
 title: Partial Application (not Currying)
 description: Today we'll discuss partial application and currying. By the end of the episode, you'll understand what these two different concepts are how they are different from each other, and where you can apply them in practice. In between the episode, we'll also talk about the brilliant computer scientist Haskell Curry, and we'll mention the Curry-Howard isomorphism.
-audio: https://feeds.soundcloud.com/stream/743152012-the-programming-podcast-episode-3-partial-application-not-currying.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292374/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135416-44100-2-d94ae3de453249c7.mp3
 publish: true
 ---
 

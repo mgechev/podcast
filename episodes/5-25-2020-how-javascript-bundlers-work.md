@@ -1,7 +1,7 @@
 ---
 title: How JavaScript Bundlers Work
 description: In this episode, we'll look at what data structures and algorithms JavaScript bundlers use. We'll talk about ECMAScript modules, strongly connected components, depth-first search, and more! Enjoy!
-audio: https://feeds.soundcloud.com/stream/827975104-the-programming-podcast-episode-18-how-javascript-bundlers-work.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292368/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135405-44100-2-ef868225f7bd2ac2.mp3
 publish: true
 ---
 

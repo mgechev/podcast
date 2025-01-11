@@ -1,7 +1,7 @@
 ---
 title: Quickselect
 description: Today we're going to talk about quickselect. This algorithm helps us quickly find the n-th smallest element in unsorted arrays. It'll not only help you improve the performance of your applications, but it's also a very common white-board interview problem.
-audio: https://feeds.soundcloud.com/stream/746885413-the-programming-podcast-episode-4-quickselect.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292369/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135407-44100-2-99d79cbd047d6b61.mp3
 publish: true
 ---
 

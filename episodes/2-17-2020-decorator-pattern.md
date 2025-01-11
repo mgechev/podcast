@@ -1,7 +1,7 @@
 ---
 title: Decorator Pattern
 description: Today you'll learn how at runtime, you can enhance the behavior or existing objects using the decorator pattern. In this episode, we'll discuss the advantages of decorators over inheritance and look at two examples from real-life - implementing a network communication protocol and enriching user interface components.
-audio: https://feeds.soundcloud.com/stream/762511612-the-programming-podcast-decorator-pattern.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292371/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135409-44100-2-5d2dc62a29705f0e.mp3
 publish: true
 ---
 

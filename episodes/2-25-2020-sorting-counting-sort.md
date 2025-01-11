@@ -1,7 +1,7 @@
 ---
 title: Sorting. Counting Sort.
 description: Have you ever been frustrated during interviews thinking that your interviewer expects you to have memorized a bunch of sorting algorithms you'd never need in real life? In this episode of the podcast learn how to approach such situations. In performance critical systems you may have to implement an efficient sorting yourself. Learn how to beat the built-in algorithm in a few lines of code!
-audio: http://feeds.soundcloud.com/stream/766603615-the-programming-podcast-sorting-counting-sort.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292364/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135398-44100-2-51c19dad91f5ea1e.mp3
 publish: true
 ---
 

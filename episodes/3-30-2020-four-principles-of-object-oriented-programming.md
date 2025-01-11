@@ -1,7 +1,7 @@
 ---
 title: The Four Principles of OOP
 description: In today's episode, you'll learn the four principles of object-oriented programming. We'll discuss abstraction, inheritance, encapsulation, and polymorphism. By the end of the show, you'll understand each one of them; you'll know how they relate to each other, and how to use them in practice.
-audio: https://feeds.soundcloud.com/stream/787273444-the-programming-podcast-episode-14-the-four-principles-of-oop.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292365/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135399-44100-2-2d5b03d0012e8140.mp3
 publish: true
 ---
 

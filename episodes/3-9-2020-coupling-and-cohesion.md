@@ -1,7 +1,7 @@
 ---
 title: Coupling and Cohesion
 description: Today you'll learn how keeping your abstractions more cohesive and less coupled can improve the quality and maintainability of your software.
-audio: https://feeds.soundcloud.com/stream/773562766-the-programming-podcast-coupling-and-cohesion.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292362/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135400-44100-2-e33dbcb82aa06c21.mp3
 publish: true
 ---
 

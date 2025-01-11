@@ -1,7 +1,7 @@
 ---
 title: Memoization
 description: Today we'll learn about memoization! Memoization is a practice that helps us improve the performance of our apps using caching. In the episode, we'll also discuss pure functions, caching strategies, and much more!
-audio: https://feeds.soundcloud.com/stream/798043168-the-programming-podcast-episode-16-memoization.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292363/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135401-44100-2-67a8d555e01da76c.mp3
 publish: true
 ---
 

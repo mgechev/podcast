@@ -1,7 +1,7 @@
 ---
 title: Compilers, Linters, and Formatters
 description: In this episode of the programming podcast, we'll discuss static analysis and code transformation. In particular, we'll look at the difference between compilers, linters, and formatters. By the end of the episode, you'll understand what tool you should use to improve your development experience and team processes.
-audio: https://feeds.soundcloud.com/stream/792701521-the-programming-podcast-episode-15-compilers-linters-and-formatters.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292376/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135418-44100-2-d2f85222f47512c0.mp3
 publish: true
 ---
 

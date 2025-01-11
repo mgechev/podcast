@@ -1,7 +1,7 @@
 ---
 title: How Compilers Work
 description: In this episode, we discuss how compilers work. By the end of the show, you'll have a high-level understanding of the phases the source code you write goes though before executed!
-audio: https://feeds.soundcloud.com/stream/738933013-the-programming-podcast-episode-1-how-compilers-work.mp3
+audio: ttps://anchor.fm/s/ff47d524/podcast/play/96292379/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135402-44100-2-b549950c8f25e68a.mp3
 publish: true
 ---
 

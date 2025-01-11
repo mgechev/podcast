@@ -1,7 +1,7 @@
 ---
 title: Dependency Injection
 description: Today we'll talk about using dependency injection across paradigms! You'll understand what this pattern is all about and how to use it.
-audio: https://feeds.soundcloud.com/stream/803589118-the-programming-podcast-episode-17-dependency-injection.mp3
+audio: https://anchor.fm/s/ff47d524/podcast/play/96292367/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-26%2F392135404-44100-2-b79c5b6f1bd23d40.mp3
 publish: true
 ---
 
