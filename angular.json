@@ -6,103 +6,64 @@
     "podcast": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": ".",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@analogjs/platform:vite",
           "options": {
-            "outputPath": "dist/podcast",
-            "index": "src/index.html",
+            "configFile": "vite.config.ts",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+            "outputPath": "dist/client",
+            "tsConfig": "tsconfig.app.json"
           },
+          "defaultConfiguration": "production",
           "configurations": {
+            "development": {
+              "mode": "development"
+            },
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
+              "sourcemap": false,
+              "mode": "production"
             }
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@analogjs/platform:vite-dev-server",
+          "defaultConfiguration": "development",
           "options": {
-            "browserTarget": "podcast:build"
+            "buildTarget": "podcast:build",
+            "port": 4200
           },
           "configurations": {
+            "development": {
+              "buildTarget": "podcast:build:development",
+              "hmr": true
+            },
             "production": {
-              "browserTarget": "podcast:build:production"
+              "buildTarget": "podcast:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "podcast:build"
+            "buildTarget": "podcast:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@analogjs/vitest-angular:test",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+            "config": "vite.config.ts"
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -121,7 +82,6 @@
       }
     }
   },
-  "defaultProject": "podcast",
   "cli": {
     "analytics": "5fdd4d35-05f8-4538-99c0-c92c49c01d7d"
   }

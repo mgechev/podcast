@@ -1,26 +1,22 @@
-import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, inject, input } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { ContentFile } from '@analogjs/content';
 
-export interface Episode {
-  title: string;
-  description: string;
-  route: string;
-  number: number;
-  audio: string;
-}
+import { NgxCircularPlayerComponent } from './ngx-circular-player.component';
+import { Episode } from './episodes';
 
 @Component({
   selector: 'app-episode-summary',
+  imports: [NgxCircularPlayerComponent, RouterLink],
   templateUrl: './episode-summary.component.html',
   styleUrls: ['./episode-summary.component.css']
 })
 export class EpisodeSummaryComponent {
-  @Input() episode: Episode;
-  @Input() showPlayer = true;
-
-  constructor(private _router: Router) {}
+  private _router = inject(Router);
+  episode = input<ContentFile<Episode | Record<string, never>>>();
+  showPlayer = input(true);
 
   get preview() {
-    return this._router.routerState.snapshot.url !== this.episode.route;
+    return this._router.routerState.snapshot.url !== `/episodes/${this.episode()?.slug}`;
   }
 }

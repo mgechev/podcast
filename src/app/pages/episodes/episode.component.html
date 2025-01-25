@@ -1,0 +1,20 @@
+@let episode = currentEpisode();
+
+@if (episode) {
+  <div>
+    <app-episode-summary [episode]="episode" [showPlayer]="false"
+      ><app-episode-summary> </app-episode-summary
+    ></app-episode-summary>
+    <section class="episode-content">
+      <audio preload="auto" controls>
+        <source type="audio/mp3" [src]="episode.attributes.audio">
+      </audio>
+      <analog-markdown [content]="episode.content"/>
+    </section>
+  </div>
+  @if(!episode) {
+    <div class="loading">
+      Loading...
+    </div>
+  }
+}
