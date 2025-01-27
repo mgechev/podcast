@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -10,8 +9,7 @@ import {
 const RADIUS = 50;
 
 @Component({
-  imports: [CommonModule],
-   selector: 'ngx-circular-player',
+  selector: 'ngx-circular-player',
   templateUrl: './ngx-circular-player.component.html',
   styleUrls: ['./ngx-circular-player.component.css'],
 })
