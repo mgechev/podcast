@@ -1,4 +1,3 @@
-import 'zone.js';
 import 'autotrack/lib/plugins/url-change-tracker';
 
 import { enableProdMode } from '@angular/core';
