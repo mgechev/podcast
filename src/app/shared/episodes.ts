@@ -1,27 +1,37 @@
-import { Injectable } from '@angular/core';
-import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
-import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
-import { Episode } from './episode-summary.component';
+import { computed, Injectable } from '@angular/core';
+import { injectContentFiles } from '@analogjs/content';
+
+export interface Episode {
+  title: string;
+  description: string;
+  slug: string;
+  published: Date;
+  number: number;
+  audio: string;
+}
 
 const dateRe = /(\d\d?-\d\d?-\d\d\d\d)/;
 
 @Injectable()
 export class Episodes {
-  constructor(private _srs: ScullyRoutesService) {}
+  private contentFiles = injectContentFiles<Episode>();
+  episodes = computed(() => {
+    const routeList = this.contentFiles
+      .filter(r => dateRe.test(r.slug))
+      .sort((a, b) => {
+        const adate = dateRe.exec(a.slug)?.[0] as string;
+        const bdate = dateRe.exec(b.slug)?.[0] as string;
+        return new Date(bdate).getTime() - new Date(adate).getTime();
+      });
+    return routeList
+      .map((e, idx) => {
+        const adate = dateRe.exec(e.slug)?.[0] as string;
 
-  episodes$ = this._srs.available$.pipe(
-    map(routeList => {
-      routeList = routeList
-        .filter(r => dateRe.test(r.route))
-        .sort((a, b) => {
-          const adate = dateRe.exec(a.route)[0];
-          const bdate = dateRe.exec(b.route)[0];
-          return new Date(bdate).getTime() - new Date(adate).getTime();
-        });
-      return routeList
-        .filter((route: ScullyRoute) => route.route.startsWith(`/episode/`))
-        .map((e, idx) => ({ ...e, number: routeList.length - idx }));
-    })
-  ) as Observable<Episode[]>;
+        return {
+          ...e,
+          published: new Date(adate),
+          number: routeList.length - idx
+        }
+      });
+  });
 }

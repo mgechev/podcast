@@ -13,14 +13,8 @@ Having a computer science degree is not a requirement for getting value from the
 
 ## How to start?
 
-I need to migrate off scully and webpack...but until then:
-
 ```bash
-nvm use 12
 npm i
-vim /Users/mgechev/Projects/podcast/node_modules/webpack-dev-server/client/utils/createSocketUrl.js
-npm i querystring-es3
-# edit querystring to querystring-es3
 npm start
 ```
 

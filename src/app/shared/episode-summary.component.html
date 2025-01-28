@@ -1,16 +1,23 @@
-<section *ngIf="episode">
-  <h1>
-    <span>Episode #{{ episode.number }}</span
-    >
-    {{ episode.title }}
-  </h1>
-  <ngx-circular-player
-    *ngIf="showPlayer"
-    [source]="episode.audio"
-    width="120"
-  ></ngx-circular-player>
-</section>
-<summary *ngIf="episode">
-  {{ episode.description }}
-  <a *ngIf="preview" [routerLink]="episode.route">Find more</a>
-</summary>
+@let ep = episode();
+
+@if(ep) {
+  <section>
+    <h1>
+      <span>Episode #{{ $any(ep).number }}</span
+      >
+      {{ ep.attributes.title }}
+    </h1>
+    @if(showPlayer()) {
+      <ngx-circular-player
+        [source]="ep.attributes.audio"
+        width="120"
+      ></ngx-circular-player>
+    }
+  </section>
+  <summary>
+    {{ ep.attributes.description }}
+    @if(preview) {
+      <a [routerLink]="['/episodes/', ep.slug]">Find more</a>
+    }
+  </summary>
+}
