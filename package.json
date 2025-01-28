@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "release": "ng build --prod && echo 'podcast.mgechev.com' > docs/CNAME",
+    "analog": "analog",
+    "release": "ng build && mv dist/analog/public docs && echo 'podcast.mgechev.com' > docs/CNAME",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
